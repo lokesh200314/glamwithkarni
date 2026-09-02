@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2824" />
+      <stop offset="100%" stop-color="#181513" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DCAC" />
+      <stop offset="50%" stop-color="#D49841" />
+      <stop offset="100%" stop-color="#9E5F3D" />
+    </linearGradient>
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5E4" />
+      <stop offset="100%" stop-color="#E5AF58" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background with subtle border -->
+  <rect width="100" height="100" rx="24" fill="url(#bgGrad)" />
+  <rect x="3" y="3" width="94" height="94" rx="21" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.6" />
+
+  <!-- Monogram Letter K (Elegant Serif) -->
+  <text 
+    x="45" 
+    y="70" 
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" 
+    font-size="62" 
+    font-weight="600" 
+    font-style="italic"
+    fill="url(#goldGrad)" 
+    text-anchor="middle">
+    K
+  </text>
+
+  <!-- Makeover Artistry Sparkle -->
+  <path 
+    d="M74 24 Q 74 34 84 34 Q 74 34 74 44 Q 74 34 64 34 Q 74 34 74 24 Z" 
+    fill="url(#sparkleGrad)" 
+  />
+  <circle cx="74" cy="34" r="1.5" fill="#FFFFFF" />
+
+  <!-- Subtle small sparkle -->
+  <path 
+    d="M26 68 Q 26 73 31 73 Q 26 73 26 78 Q 26 73 21 73 Q 26 73 26 68 Z" 
+    fill="url(#sparkleGrad)" 
+    opacity="0.8"
+  />
+</svg>
