@@ -61,27 +61,34 @@ function aistudioMediaPlugin() {
             // Fall through if URI decoding or file access fails
           }
         }
-        next();
-      });
-    },
-  };
-}
-// LINT.ThenChange(//depot/google3/java/com/google/alkali/boq/makersuite/applet_dev_service/templates/initializers/react_theme/vite.config.ts:aistudio_media_plugin)
 
-export default defineConfig(() => {
-  return {
-    plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, '.'),
-      },
+        next()
+      })
     },
-    server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modify—file watching is disabled to prevent flickering during agent edits.
-      hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
-      watch: process.env.DISABLE_HMR === 'true' ? null : {},
+  }
+}
+
+export default defineConfig({
+  base: '/glamwithkarni/',
+
+  plugins: [
+    react(),
+    tailwindcss(),
+    aistudioMediaPlugin(),
+  ],
+
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '.'),
     },
-  };
-});
+  },
+
+  server: {
+    hmr: process.env.DISABLE_HMR !== 'true',
+
+    watch:
+      process.env.DISABLE_HMR === 'true'
+        ? null
+        : {},
+  },
+})
