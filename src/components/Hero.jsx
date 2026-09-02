@@ -307,7 +307,7 @@ export const Hero = ({ onOpenBooking, onExploreGallery }) => {
             <div className="hidden lg:block space-y-4">
               <div className="inline-flex items-center gap-2 bg-[#F1E7DD] border border-[#DFCFC1] px-3.5 py-1.5 rounded-full text-xs text-[#6B4E3D] font-medium tracking-wide">
                 <MapPin className="w-3.5 h-3.5 text-[#9E5F3D]" />
-                <span>Karni Makeovers • Doorstep & Destination Weddings</span>
+                <span>Karni Makeovers • Doorstep & Destination & happyness Weddings</span>
               </div>
 
               <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl text-[#1E1B18] font-normal leading-[1.12] tracking-tight">
