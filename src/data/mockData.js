@@ -1,3 +1,7 @@
+import client1Img from '../assets/clients/karni-client-1.jpg';
+import client2Img from '../assets/clients/karni-client-2.jpg';
+import client3Img from '../assets/clients/karni-client-3.jpg';
+
 export const ARTIST_INFO = {
   name: "Karni",
   brandName: "glamwithKarni_makeover",
@@ -196,6 +200,42 @@ export const SERVICES_DATA = [
 ];
 
 export const GALLERY_DATA = [
+  {
+    id: "gal-real-client-1",
+    title: "Signature Emerald & Gold Muhurtham Makeover (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "Grand Wedding Mandapam, Chennai",
+    category: "Muhurtham",
+    gender: "Women",
+    image: client1Img,
+    technique: "Ultra HD Sweat-Proof Base + Emerald Diamond Jewelry Setting + Winged Kohl",
+    description: "Real client makeover crafted by Karni featuring flawless radiant HD skin, winged eyeliner, nath nose chain attachment, and emerald diamond jewellery setting.",
+    tags: ["Real Client Work", "Emerald Jewelry", "HD Skin", "Muhurtham Bride"]
+  },
+  {
+    id: "gal-real-client-2",
+    title: "Gold Kanchipuram Silk Saree & Royal Draping (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "Royal Wedding Hall, Chennai",
+    category: "Saree & Dhoti Draping",
+    gender: "Women",
+    image: client2Img,
+    technique: "Silk Saree Box-Pleating + Crimson Velvet Blouse Styling + Oddiyanam Setting",
+    description: "Real client showcasing Karni's signature saree box-pleating technique with a rich golden Kanchipuram silk saree, red velvet embroidered blouse, and traditional waist belt.",
+    tags: ["Real Client Work", "Saree Pleating", "Kanchipuram Silk", "Oddiyanam"]
+  },
+  {
+    id: "gal-real-client-3",
+    title: "Royal Velvet Dupatta Veil & Bridal Hairdo (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "Leela Palace Banquets, Chennai",
+    category: "Reception",
+    gender: "Women",
+    image: client3Img,
+    technique: "Embellished Velvet Veil Fixing + Luminous Glow Base + Bridal Hairdo",
+    description: "Real client featuring a crimson embroidered velvet dupatta veil, elegant side-profile finish, emerald jewellery setting, and romantic bridal hairdo.",
+    tags: ["Real Client Work", "Velvet Veil", "Bridal Hairdo", "Reception Glam"]
+  },
   {
     id: "gal-1",
     title: "Royal Crimson & Gold Muhurtham Makeover",
@@ -451,6 +491,48 @@ export const FAQ_DATA = [
 ];
 
 export const HERO_SLIDER_DATA = [
+  {
+    id: "slide-real-client-1",
+    serviceId: "bridal-muhurtham",
+    category: "Real Bride Transformation",
+    styleName: "Signature Emerald & Gold Muhurtham Makeover",
+    client: "Real Karni Client",
+    venue: "Wedding Mandapam, Chennai",
+    image: client1Img,
+    headline: "Radiant HD Skin, Emerald Elegance & Winged Kohl Artistry",
+    technique: "Real Client Work • HD Sweatproof Base • Classic Nath & Jewelry Setting",
+    badge: "✨ Real Client Work",
+    tags: ["Real Client", "Emerald Jewelry", "HD Makeup"],
+    palette: "from-emerald-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-2",
+    serviceId: "saree-dhoti-draping",
+    category: "Silk Saree Draping",
+    styleName: "Golden Kanchipuram Saree & Oddiyanam Styling",
+    client: "Real Karni Client",
+    venue: "Royal Wedding Venue, Chennai",
+    image: client2Img,
+    headline: "Flawless Silk Saree Pleating & Layered Emerald Ornaments",
+    technique: "Real Client Work • Velvet Embroidered Blouse • Crisp Box-Pleating",
+    badge: "✨ Real Client Work",
+    tags: ["Kanchipuram Silk", "Oddiyanam Setting", "Real Bride"],
+    palette: "from-amber-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-3",
+    serviceId: "reception-glam-women",
+    category: "Bridal Veil & Hairdo",
+    styleName: "Royal Velvet Dupatta & Bridal Hairdo Artistry",
+    client: "Real Karni Client",
+    venue: "Grand Reception, Chennai",
+    image: client3Img,
+    headline: "Graceful Bridal Veil Pinning & Radiant Shimmer Glow",
+    technique: "Real Client Work • Embellished Veil Fixing • 16-Hour Glow Base",
+    badge: "✨ Real Client Work",
+    tags: ["Bridal Veil", "Royal Velvet", "Hair Architecture"],
+    palette: "from-rose-950/80 via-black/40 to-transparent"
+  },
   {
     id: "slide-muhurtham",
     serviceId: "bridal-muhurtham",
