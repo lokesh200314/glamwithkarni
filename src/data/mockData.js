@@ -10,16 +10,16 @@ export const ARTIST_INFO = {
   makeoversCount: 850,
   googleRating: 4.9,
   reviewsCount: 310,
-  phone: "+91 98402 88741",
-  whatsappNumber: "919840288741",
+  phone: "+91 81223 03766",
+  whatsappNumber: "918122303766",
   email: "glamwithkarni@gmail.com",
   instagramHandle: "@glamwithKarni_makeover",
-  studioAddress: "28, 4th Main Road, Anna Nagar West, Chennai, Tamil Nadu 600040",
+  studioAddress: "No 18, Somasundaram Avenue, Sakthi Nagar, Porur, Chennai, Tamil Nadu",
   workingHours: "Monday - Sunday: 5:00 AM - 9:30 PM (IST)",
   serviceAreas: [
-    "Doorstep & Venue Travel Anywhere",
-    "Tamil Nadu & South India",
-    "Destination Weddings & Outstations"
+    "Doorstep & Venue Travel Anywhere (Home, Mandapam & Resorts)",
+    "Chennai, All Over Tamil Nadu & South India",
+    "Destination Weddings & Outstations Worldwide"
   ]
 };
 

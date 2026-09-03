@@ -7,9 +7,9 @@ export const WhatsAppFloatingWidget = () => {
   const [customMsg, setCustomMsg] = useState('');
 
   const quickPrompts = [
-    { label: "Check wedding / event date availability", text: "Hi Karni! I'd like to check your availability for my wedding date in Chennai for makeover & draping." },
+    { label: "Check wedding / event date availability", text: "Hi Karni! I'd like to check your availability for my wedding date for makeover & draping." },
     { label: "Men / Groom styling & hairdo packages", text: "Hi Karni! Could you share groom styling, hairdo and grooming packages for our wedding?" },
-    { label: "Saree Draping & Madisar 9-yards inquiry", text: "Hi Karni! Do you support box pleat silk saree & 9-yards Madisar draping in Chennai?" },
+    { label: "Saree Draping & Madisar 9-yards inquiry", text: "Hi Karni! Do you support box pleat silk saree & 9-yards Madisar draping at venue/home?" },
     { label: "Hairdo & Floral Braid (Poola Jada) booking", text: "Hi Karni! I would like to book bridal hairdo & traditional floral braid styling." }
   ];
 
@@ -65,7 +65,7 @@ export const WhatsAppFloatingWidget = () => {
             {/* Incoming Bubble */}
             <div className="bg-white rounded-xl p-3 shadow-xs max-w-[85%] text-[#2D2824] space-y-1.5 rounded-tl-none">
               <p className="leading-relaxed">
-                Vanakkam! 🙏 Looking for bridal, groom makeover, draping or hairdo in Chennai?
+                Vanakkam! 🙏 Looking for bridal, groom makeover, draping or hairdo? We travel anywhere for doorstep & destination weddings!
               </p>
               <p className="text-[#554E46] leading-relaxed">
                 I'm Karni (glamwithKarni_makeover). Select a quick topic or message me directly on WhatsApp!

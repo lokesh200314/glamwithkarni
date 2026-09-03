@@ -64,7 +64,7 @@ export const ContactSection = () => {
                     {ARTIST_INFO.studioAddress}
                   </p>
                   <span className="text-[11px] text-[#7A7065] mt-1 block">
-                    (Landmark: Near Anna Nagar Tower Park / Roundtana)
+                    (Landmark: Sakthi Nagar, Porur, Chennai)
                   </span>
                 </div>
               </div>
