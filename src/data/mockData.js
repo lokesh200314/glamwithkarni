@@ -5,6 +5,11 @@ import client4Img from '../assets/clients/karni-client-4.jpg';
 import client5Img from '../assets/clients/karni-client-5.jpg';
 import client6Img from '../assets/clients/karni-client-6.jpg';
 import client7Img from '../assets/clients/karni-client-7.jpg';
+import client8Img from '../assets/clients/karni-client-8.jpg';
+import client9Img from '../assets/clients/karni-client-9.jpg';
+import client10Img from '../assets/clients/karni-client-10.jpg';
+import client11Img from '../assets/clients/karni-client-11.jpg';
+
 
 
 export const ARTIST_INFO = {
@@ -38,7 +43,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹22,000",
     duration: "3.5 - 4 Hours",
     isPopular: true,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop",
+    image: client5Img,
     features: [
       "Ultra HD Sweat-Proof Foundation for high-humidity & sacred homam fires",
       "Traditional Winged Eyeliner & Smudgeproof Kohl Detailing",
@@ -60,7 +65,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹10,500",
     duration: "1.5 - 2 Hours",
     isPopular: true,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+    image: client8Img,
     features: [
       "Natural HD Skin Prep & Mattifying Base (Zero cakey look, perfectly skin-matched)",
       "Dark circle correction, blemish concealing & high-definition camera tone-evening",
@@ -82,7 +87,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹48,000",
     duration: "Full Day Care",
     isPopular: true,
-    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=800&auto=format&fit=crop",
+    image: client10Img,
     features: [
       "Both Morning Muhurtham & Evening Reception complete makeovers for Bride",
       "Complete Muhurtham & Reception grooming and styling for Groom",
@@ -104,7 +109,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹2,500 - ₹5,500",
     duration: "45 Mins - 1 Hour",
     isPopular: false,
-    image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=800&auto=format&fit=crop",
+    image: client11Img,
     features: [
       "Traditional Kanchipuram Silk Saree crisp Box Pleating & Ironing",
       "Authentic 9-Yards Madisar Draping (Both Iyer & Iyengar styles with utmost comfort)",
@@ -126,7 +131,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹4,500 - ₹8,500",
     duration: "1 - 1.5 Hours",
     isPopular: false,
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop",
+    image: client9Img,
     features: [
       "Traditional South Indian Braided Jadai with antique billai & fresh poola jada",
       "Fresh Madurai Malli (Jasmine), Rose petals, Baby's Breath & Orchids weaving",
@@ -147,7 +152,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹24,000",
     duration: "3 - 3.5 Hours",
     isPopular: true,
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
+    image: client6Img,
     features: [
       "Airbrush / Micro-Mist HD Base for 16-hour photo-ready glow",
       "Cut-Crease Champagne / Rose Gold Shimmer Eye Glam",
@@ -169,7 +174,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹16,000",
     duration: "2.5 - 3 Hours",
     isPopular: false,
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+    image: client7Img,
     features: [
       "Water-resistant dewy glow makeup that survives turmeric & tears of joy",
       "Soft Glam Smokey or Peachy Monochrome look for Bride",
@@ -190,7 +195,7 @@ export const SERVICES_DATA = [
     priceDisplay: "₹6,000 / person",
     duration: "1.5 Hours / person",
     isPopular: false,
-    image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800&auto=format&fit=crop",
+    image: client4Img,
     features: [
       "HD Base matching skin undertone perfectly (Zero ashy or white-cast)",
       "Soft Glam Eyes & Long-Wear Lip Application for Women",
@@ -205,6 +210,54 @@ export const SERVICES_DATA = [
 ];
 
 export const GALLERY_DATA = [
+  {
+    id: "gal-real-client-8",
+    title: "Gramophone Heritage Muhurtham (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "Traditional Wedding Hall, Chennai",
+    category: "Muhurtham",
+    gender: "Women",
+    image: client8Img,
+    technique: "Maroon Silk Saree Draping + Vintage Gramophone Setup + Gold Oddiyanam",
+    description: "Real client makeover by Karni featuring a rich maroon silk saree, traditional gold temple necklaces, waist belt, and elegant seating next to a vintage brass gramophone table.",
+    tags: ["Real Client Work", "Gramophone Heritage", "Maroon Silk", "Muhurtham Bride"]
+  },
+  {
+    id: "gal-real-client-9",
+    title: "Beige Sequin Saree & Long Open Hair Curls (Real Client)",
+    clientName: "Real Karni Client",
+    weddingVenue: "Grand Reception Hall, Chennai",
+    category: "Hair & Hairdo",
+    gender: "Women",
+    image: client9Img,
+    technique: "Cascading Open Wave Hairdo + Dewy Soft Glam Base + Sequin Saree Draping",
+    description: "Real client featuring a delicate cream/beige sequined saree, dewy radiant makeup, and a full cascading open-hair wavy hairstyle.",
+    tags: ["Real Client Work", "Long Curls", "Hair Architecture", "Party Glam"]
+  },
+  {
+    id: "gal-real-client-10",
+    title: "Bridal Kundan Jewellery & Eye Artistry Close-Up (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "Luxury Hotel Banquets, Chennai",
+    category: "Muhurtham",
+    gender: "Women",
+    image: client10Img,
+    technique: "Top-Angle Jewelry Fixing + Shimmer Eye Art + Crimson Velvet Embroidered Blouse",
+    description: "High-angle top detail shot showing Karni's intricate Kundan & pink stone jewellery arrangement, embroidered crimson blouse, and delicate eye makeup.",
+    tags: ["Real Client Work", "Kundan Jewelry", "Eye Makeup", "Bridal Close-Up"]
+  },
+  {
+    id: "gal-real-client-11",
+    title: "Outdoor Sunlit Kanchipuram Silk Saree Draping (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "Green Park Resort & Gardens, Chennai",
+    category: "Saree & Dhoti Draping",
+    gender: "Women",
+    image: client11Img,
+    technique: "Green & Orange Silk Saree Box-Pleating + Floral Red Hair Bun + Sunlit HD Skin",
+    description: "Real client standing in natural garden sunlight showcasing Karni's box-pleating for a green & orange Kanchipuram silk saree with red floral hair accessory.",
+    tags: ["Real Client Work", "Outdoor Garden", "Kanchipuram Silk", "Saree Pleating"]
+  },
   {
     id: "gal-real-client-4",
     title: "Emerald & Floral Braided Jadai Muhurtham (Real Client)",
@@ -288,106 +341,6 @@ export const GALLERY_DATA = [
     technique: "Embellished Velvet Veil Fixing + Luminous Glow Base + Bridal Hairdo",
     description: "Real client featuring a crimson embroidered velvet dupatta veil, elegant side-profile finish, emerald jewellery setting, and romantic bridal hairdo.",
     tags: ["Real Client Work", "Velvet Veil", "Bridal Hairdo", "Reception Glam"]
-  },
-  {
-    id: "gal-1",
-    title: "Royal Crimson & Gold Muhurtham Makeover",
-    clientName: "Divya Krishnan",
-    weddingVenue: "Mayor Ramanathan Chettiar Hall (MRC), Chennai",
-    category: "Muhurtham",
-    gender: "Women",
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=900&auto=format&fit=crop",
-    technique: "Ultra HD Sweat-Proof Base + Smudgeproof Winged Kohl + Saree Draping",
-    description: "Divya wore an heirloom Kanchipuram silk saree with antique Lakshmi temple jewellery. Karni crafted a radiant brow arch, sweat-proof HD skin, and authentic Madisar pleating that survived 6 hours of sacred homam rituals.",
-    beforeImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
-    afterImage: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop",
-    tags: ["Kanchipuram Silk", "Temple Jewelry", "HD Makeup", "Traditional Braid"]
-  },
-  {
-    id: "gal-groom-1",
-    title: "Royal Groom Muhurtham & Dhoti Styling",
-    clientName: "Karthik Subramanian",
-    weddingVenue: "Mayor Ramanathan Chettiar Hall (MRC), Chennai",
-    category: "Groom & Men",
-    gender: "Men",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=900&auto=format&fit=crop",
-    technique: "High Definition Skin Evening + Precision Beard Edge + Pattu Veshti Draping",
-    description: "Karthik wanted a subtle, non-cakey finish for high-definition wedding videography. Karni groomed his beard with clean contours, balanced under-eye tone, styled his hair with matte volume, and draped his silk Panchakacham veshti with knife-edge pleats.",
-    tags: ["Groom HD", "Beard Sculpting", "Pattu Veshti", "South Indian Groom"]
-  },
-  {
-    id: "gal-2",
-    title: "Champagne Shimmer Grand Reception",
-    clientName: "Swathi Sundar",
-    weddingVenue: "The Leela Palace, Chennai",
-    category: "Reception",
-    gender: "Women",
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=900&auto=format&fit=crop",
-    technique: "Airbrush Glow + Rose-Gold Cut Crease Glam + Hollywood Waves",
-    description: "For Swathi's sea-facing reception at Leela Palace, Karni curated a glass-skin airbrush look with subtle champagne micro-glitter and loose romantic Hollywood waves.",
-    beforeImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
-    afterImage: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
-    tags: ["Airbrush Base", "Modern Waves", "Cocktail Glam", "Glass Skin"]
-  },
-  {
-    id: "gal-draping-1",
-    title: "Authentic 9-Yards Madisar Saree Draping",
-    clientName: "Shruti Raghavan",
-    weddingVenue: "Rani Meyyammai Hall, Egmore, Chennai",
-    category: "Saree & Dhoti Draping",
-    gender: "Women",
-    image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=900&auto=format&fit=crop",
-    technique: "Iyer Madisar Box-Pleating + Zero-Slip Pinning",
-    description: "Flawless traditional 9-yards Madisar draping with structured pleats that stayed 100% secure through seated mantras, homam rounds, and Oonjal swings.",
-    tags: ["Madisar Draping", "9-Yards Saree", "Iyer Wedding", "Box Pleats"]
-  },
-  {
-    id: "gal-hair-1",
-    title: "Heirloom Jadai & Fresh Jasmine Hair Architecture",
-    clientName: "Harini Balaji",
-    weddingVenue: "Sri Shankara Hall, T. Nagar, Chennai",
-    category: "Hair & Hairdo",
-    gender: "Women",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=900&auto=format&fit=crop",
-    technique: "Intricate Madurai Malli Veni + Antique Billaijadai",
-    description: "Traditional South Indian hair architecture integrating genuine antique gold Jadai ornaments with three tiers of fragrant fresh Madurai malli and rose veni.",
-    tags: ["Bridal Hairdo", "Jasmine Veni", "Antique Jadai", "Hair Architecture"]
-  },
-  {
-    id: "gal-groom-2",
-    title: "Contemporary Groom Tuxedo & Sangeet Styling",
-    clientName: "Aditya Mohan",
-    weddingVenue: "Taj Coromandel, Chennai",
-    category: "Groom & Men",
-    gender: "Men",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=900&auto=format&fit=crop",
-    technique: "Sweat-Proof Mattifying Skin Base + Modern Pompadour Styling",
-    description: "Sleek and polished grooming for Aditya's reception cocktail. Mattified T-zone, styled pompadour with 12-hour humidity hold, and custom pocket square/lapel pinning.",
-    tags: ["Groom Hairdo", "Reception Groom", "Matte Grooming", "Men's Styling"]
-  },
-  {
-    id: "gal-3",
-    title: "Sunlit Haldi Radiant Glow (Couple)",
-    clientName: "Meenakshi & Rahul",
-    weddingVenue: "Green Meadows Resort, ECR Chennai",
-    category: "Engagement & Haldi",
-    gender: "Couple",
-    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=900&auto=format&fit=crop",
-    technique: "Dewy Tint + Coral Monochrome Blush + Groom Skin Care",
-    description: "Fresh, luminous base accented with floral headpieces for Meenakshi and natural tone-evening for Rahul under open-air lawn sunlight.",
-    tags: ["Haldi Glow", "Boho Flowers", "Couple Look", "Outdoor Lawn"]
-  },
-  {
-    id: "gal-4",
-    title: "Pastel Lavender Sangeet Makeover & Textured Braid",
-    clientName: "Aishwarya Varma",
-    weddingVenue: "Taj Coromandel, Nungambakkam, Chennai",
-    category: "Hair & Hairdo",
-    gender: "Women",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=900&auto=format&fit=crop",
-    technique: "Smokey Mauve Eyes + Pull-Through Floral Braid",
-    description: "A contemporary party look featuring soft smokey lavender tones and an expansive French pull-through braid interwoven with baby's breath blossoms.",
-    tags: ["Sangeet Glam", "Textured Braid", "Hairdo", "Glossy Lips"]
   }
 ];
 
@@ -400,8 +353,8 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     lookType: "Muhurtham + Reception Couple Package",
     review: "Karni (@glamwithKarni_makeover) is a pure magician! Both Ashwin and I booked her for our MRC wedding. My Muhurtham HD makeup and traditional 9-yards Madisar draping were so comfortable and lasted all morning through the homam. Ashwin loved how natural his grooming looked on camera. 10/10 recommend Karni!",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
-    weddingImage: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=400&auto=format&fit=crop"
+    avatar: client1Img,
+    weddingImage: client5Img
   },
   {
     id: "test-2",
@@ -411,8 +364,8 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     lookType: "Airbrush Reception + Groom Makeover",
     review: "Booking Karni for my Leela Palace reception was the best decision! Her hairdo styling with Hollywood waves turned out so elegant, and her saree draping pleats were razor sharp. She also groomed Siddharth's hair and beard seamlessly. Her calm energy made the getting-ready process so joyous.",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
-    weddingImage: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=400&auto=format&fit=crop"
+    avatar: client7Img,
+    weddingImage: client6Img
   },
   {
     id: "test-3",
@@ -422,8 +375,8 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     lookType: "Traditional Madisar & Jadai Hairdo",
     review: "Karni's expertise in Madisar draping and traditional South Indian Jadai setting is second to none in Chennai. My grandmother and mother were so impressed by how neatly the saree was pleated. Her makeup didn't sweat off or oxidise even after 8 hours of intense wedding rituals.",
-    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop",
-    weddingImage: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=400&auto=format&fit=crop"
+    avatar: client9Img,
+    weddingImage: client11Img
   },
   {
     id: "test-4",
@@ -433,16 +386,16 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     lookType: "Groom Grooming + Haldi Saree Draping",
     review: "As a groom, I was worried about looking powdery on stage, but Karni gave me such a clean, natural matte finish. She also draped my silk Dhoti with perfection. For Meenakshi, the floral braid and dewy makeup were gorgeous. Karni is truly versatile with both men and women!",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
-    weddingImage: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=400&auto=format&fit=crop"
+    avatar: client10Img,
+    weddingImage: client8Img
   }
 ];
 
 export const INSTAGRAM_POSTS = [
   {
     id: "ig-1",
-    imageUrl: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=600&auto=format&fit=crop",
-    caption: "The grace of traditional Kanchipuram silk on our radiant bride Divya at MRC Chennai ✨ Dewy HD skin & perfect pleat draping by @glamwithKarni_makeover #glamwithkarni_makeover #ChennaiBride #MuhurthamLook #SareeDraping",
+    imageUrl: client5Img,
+    caption: "The grace of traditional Kanchipuram silk on our radiant bride at MRC Chennai ✨ Dewy HD skin & perfect pleat draping by @glamwithKarni_makeover #glamwithkarni_makeover #ChennaiBride #MuhurthamLook #SareeDraping",
     likes: 2180,
     comments: 114,
     date: "1 day ago",
@@ -451,8 +404,8 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: "ig-2",
-    imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
-    caption: "Groom Makeover & Pattu Dhoti styling for Karthik! 🤵 Camera-ready matte skin & crisp beard contours. #glamwithKarni_makeover #GroomMakeover #MenGroomingChennai #DhotiStyling",
+    imageUrl: client8Img,
+    caption: "Heritage Gramophone Muhurtham Makeover! 👑 Camera-ready matte skin, golden saree pleats & antique jewelry setting. #glamwithKarni_makeover #HeritageBride #SareeDraping",
     likes: 1940,
     comments: 98,
     date: "3 days ago",
@@ -461,7 +414,7 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: "ig-3",
-    imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
+    imageUrl: client6Img,
     caption: "Reception glamour & Hollywood waves hairdo for Swathi at @theleelapalacechennai 💫 Rose-gold cut crease glam! #glamwithKarni_makeover #HairdoArtist #AirbrushMakeup",
     likes: 2840,
     comments: 156,
@@ -471,8 +424,8 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: "ig-4",
-    imageUrl: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=600&auto=format&fit=crop",
-    caption: "Traditional 9-yards Madisar draping with fresh Madurai mallipoo 🌸 Seamless box pleats that stay secure all day. #glamwithKarni_makeover #MadisarDraping #BridalHairdoChennai",
+    imageUrl: client11Img,
+    caption: "Traditional Kanchipuram silk saree draping with fresh floral hair bun in natural sunlight 🌸 #glamwithKarni_makeover #SareeDraping #BridalHairdoChennai",
     likes: 3410,
     comments: 242,
     date: "1 week ago",
@@ -481,7 +434,7 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: "ig-5",
-    imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600&auto=format&fit=crop",
+    imageUrl: client4Img,
     caption: "Hair architecture breakdown: Antique temple Jadai with fresh floral layering. #glamwithKarni_makeover #BridalHairdo #JasmineVeni",
     likes: 2260,
     comments: 89,
@@ -491,8 +444,8 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: "ig-6",
-    imageUrl: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=600&auto=format&fit=crop",
-    caption: "Couple goals at ECR lawn Haldi! 🌼 Vibrant, sweat-proof makeover for both bride & groom. #glamwithKarni_makeover #CoupleMakeover #HaldiGlow",
+    imageUrl: client9Img,
+    caption: "Radiant open hair waves & sequin saree glam! 🌼 Vibrant, sweat-proof makeover by @glamwithKarni_makeover #glamwithkarni_makeover #PartyGlam",
     likes: 1980,
     comments: 73,
     date: "3 weeks ago",
@@ -544,6 +497,62 @@ export const FAQ_DATA = [
 ];
 
 export const HERO_SLIDER_DATA = [
+  {
+    id: "slide-real-client-8",
+    serviceId: "bridal-muhurtham",
+    category: "Heritage Gramophone Bride",
+    styleName: "Vintage Gramophone Heritage Muhurtham",
+    client: "Real Karni Bride",
+    venue: "Traditional Mandapam, Chennai",
+    image: client8Img,
+    headline: "Maroon Silk Saree, Vintage Gramophone & Golden Oddiyanam",
+    technique: "Real Client Work • Heritage Studio Setup • HD Base",
+    badge: "✨ Real Client Work",
+    tags: ["Gramophone Heritage", "Maroon Silk", "Real Bride"],
+    palette: "from-amber-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-9",
+    serviceId: "hairdo-and-styling",
+    category: "Beige Sequin & Long Hairdo",
+    styleName: "Cascading Open Curls & Dewy Sequin Glam",
+    client: "Real Karni Client",
+    venue: "Grand Reception, Chennai",
+    image: client9Img,
+    headline: "Long Dark Cascading Curls & Sequin Saree Draping",
+    technique: "Real Client Work • Hair Architecture • Soft Glam Base",
+    badge: "✨ Real Client Work",
+    tags: ["Long Curls", "Sequin Saree", "Party Glam"],
+    palette: "from-stone-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-10",
+    serviceId: "bridal-muhurtham",
+    category: "Kundan Jewellery & Eye Art",
+    styleName: "Kundan Jewellery & Eye Artistry Detail",
+    client: "Real Karni Bride",
+    venue: "Luxury Hotel Banquets, Chennai",
+    image: client10Img,
+    headline: "High-Angle Kundan Necklaces, Red Embroidery & Eye Shimmer",
+    technique: "Real Client Work • Kundan Fixing • Shimmer Eye Art",
+    badge: "✨ Real Client Work",
+    tags: ["Kundan Jewelry", "Eye Shimmer", "Bridal Close-Up"],
+    palette: "from-rose-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-11",
+    serviceId: "saree-dhoti-draping",
+    category: "Outdoor Silk Saree Draping",
+    styleName: "Outdoor Sunlit Kanchipuram Silk Saree Draping",
+    client: "Real Karni Bride",
+    venue: "Green Park Resort, Chennai",
+    image: client11Img,
+    headline: "Sunlit Green & Orange Silk Saree & Floral Red Hair Bun",
+    technique: "Real Client Work • Saree Box-Pleating • Floral Bun",
+    badge: "✨ Real Client Work",
+    tags: ["Outdoor Garden", "Kanchipuram Silk", "Saree Pleating"],
+    palette: "from-emerald-950/80 via-black/40 to-transparent"
+  },
   {
     id: "slide-real-client-4",
     serviceId: "bridal-muhurtham",
@@ -641,90 +650,5 @@ export const HERO_SLIDER_DATA = [
     badge: "✨ Real Client Work",
     tags: ["Bridal Veil", "Royal Velvet", "Hair Architecture"],
     palette: "from-rose-950/80 via-black/40 to-transparent"
-  },
-  {
-    id: "slide-muhurtham",
-    serviceId: "bridal-muhurtham",
-    category: "Muhurtham Bride",
-    styleName: "Traditional South Indian Muhurtham Bride",
-    client: "Divya Krishnan",
-    venue: "MRC Hall, Chennai",
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1200&auto=format&fit=crop",
-    headline: "Temple Gold, Kanchipuram Silk & Flawless HD Skin",
-    technique: "16-Hour Sweatproof HD Base • Winged Kohl • Saree Box-Pleating",
-    badge: "Most Requested in Chennai",
-    tags: ["Sweatproof HD", "Temple Gold", "Silk Draping"],
-    palette: "from-amber-950/80 via-black/40 to-transparent"
-  },
-  {
-    id: "slide-reception",
-    serviceId: "reception-glam-women",
-    category: "Reception Glam",
-    styleName: "Grand Evening Reception & Glass Skin",
-    client: "Swathi Sundar",
-    venue: "The Leela Palace, Chennai",
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1200&auto=format&fit=crop",
-    headline: "Airbrush Radiance & Hollywood Glam Waves",
-    technique: "Rose-Gold Shimmer Eyes • Sculpted Contours • Silk Lashes",
-    badge: "Luxury Evening Look",
-    tags: ["Airbrush Glow", "Hollywood Waves", "Glass Skin"],
-    palette: "from-stone-950/80 via-black/40 to-transparent"
-  },
-  {
-    id: "slide-groom",
-    serviceId: "groom-hd-makeover",
-    category: "Groom Styling",
-    styleName: "Royal Groom HD Grooming & Dhoti Draping",
-    client: "Karthik Subramanian",
-    venue: "Mayor Ramanathan Chettiar Hall, Chennai",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
-    headline: "Camera-Ready Matte Finish & Beard Sculpting",
-    technique: "Anti-Shine Base • Textured Hair Volume • Pattu Veshti Draping",
-    badge: "Men's HD Artistry",
-    tags: ["Groom HD", "Beard Contours", "Pattu Veshti"],
-    palette: "from-zinc-950/80 via-black/40 to-transparent"
-  },
-  {
-    id: "slide-madisar",
-    serviceId: "saree-dhoti-draping",
-    category: "Madisar Draping",
-    styleName: "Authentic 9-Yards Madisar Draping (Iyer & Iyengar)",
-    client: "Shruti Raghavan",
-    venue: "Rani Meyyammai Hall, Egmore",
-    image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?q=80&w=1200&auto=format&fit=crop",
-    headline: "Razor-Sharp Box Pleats & Homam-Safe Pinning",
-    technique: "Zero-Slip Pinning • 9-Yards Koorai Saree • All-Day Comfort",
-    badge: "Traditional Heritage",
-    tags: ["9-Yards Madisar", "Box Pleating", "Zero Slip"],
-    palette: "from-amber-950/80 via-black/40 to-transparent"
-  },
-  {
-    id: "slide-hairdo",
-    serviceId: "hairdo-and-styling",
-    category: "Bridal Hairdo",
-    styleName: "Antique Jadai & Fresh Madurai Jasmine Architecture",
-    client: "Harini Balaji",
-    venue: "Sri Shankara Hall, T. Nagar",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop",
-    headline: "Poola Jada, Fragrant Malli Veni & Braid Artistry",
-    technique: "Gold Billai Alignment • Fresh Jasmine Layers • Humidity Shield",
-    badge: "Signature Hair Architecture",
-    tags: ["Jasmine Veni", "Antique Billai", "Braided Jadai"],
-    palette: "from-stone-950/80 via-black/40 to-transparent"
-  },
-  {
-    id: "slide-haldi",
-    serviceId: "engagement-haldi",
-    category: "Haldi & Sangeet",
-    styleName: "Sun-Kissed Haldi Radiant Glow (Bride & Groom)",
-    client: "Meenakshi & Rahul",
-    venue: "Green Meadows Resort, ECR Chennai",
-    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=1200&auto=format&fit=crop",
-    headline: "Vibrant Turmeric-Resistant Tint & Floral Styling",
-    technique: "Dewy Skin Prep • Floral Jewelry Fitting • Breezy Boho Braid",
-    badge: "Outdoor & Resort Weddings",
-    tags: ["Haldi Glow", "Boho Flowers", "Water Resistant"],
-    palette: "from-amber-950/80 via-black/40 to-transparent"
   }
 ];
-
