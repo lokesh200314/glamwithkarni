@@ -1,6 +1,11 @@
 import client1Img from '../assets/clients/karni-client-1.jpg';
 import client2Img from '../assets/clients/karni-client-2.jpg';
 import client3Img from '../assets/clients/karni-client-3.jpg';
+import client4Img from '../assets/clients/karni-client-4.jpg';
+import client5Img from '../assets/clients/karni-client-5.jpg';
+import client6Img from '../assets/clients/karni-client-6.jpg';
+import client7Img from '../assets/clients/karni-client-7.jpg';
+
 
 export const ARTIST_INFO = {
   name: "Karni",
@@ -200,6 +205,54 @@ export const SERVICES_DATA = [
 ];
 
 export const GALLERY_DATA = [
+  {
+    id: "gal-real-client-4",
+    title: "Emerald & Floral Braided Jadai Muhurtham (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "Mayor Ramanathan Chettiar Hall (MRC), Chennai",
+    category: "Muhurtham",
+    gender: "Women",
+    image: client4Img,
+    technique: "Floral Braided Hair Architecture + Emerald Nethi Chutti + HD Sweatproof Base",
+    description: "Real client makeover by Karni featuring handcrafted pink veni floral braid, emerald antique headpiece, and long-wear HD skin finish for sacred mandapam rituals.",
+    tags: ["Real Client Work", "Floral Jadai", "Emerald Jewelry", "Muhurtham Bride"]
+  },
+  {
+    id: "gal-real-client-5",
+    title: "Royal South Indian Temple Jewellery HD Glam (Real Client)",
+    clientName: "Real Karni Bride",
+    weddingVenue: "The Leela Palace Banquets, Chennai",
+    category: "Muhurtham",
+    gender: "Women",
+    image: client5Img,
+    technique: "Ultra HD Base + Layered Gold Temple Necklaces + Crisp Eyeliner & Nath Setting",
+    description: "Real client displaying grand traditional South Indian bridal beauty with multi-layered Lakshmi gold necklaces, nose pin setting, and camera-ready skin glow.",
+    tags: ["Real Client Work", "Temple Gold", "HD Glam", "Bridal Look"]
+  },
+  {
+    id: "gal-real-client-6",
+    title: "Modern Bronze Sheer Saree & Wave Styling (Real Client)",
+    clientName: "Real Karni Client",
+    weddingVenue: "Taj Coromandel Banquets, Chennai",
+    category: "Saree & Dhoti Draping",
+    gender: "Women",
+    image: client6Img,
+    technique: "Contemporary Sheer Saree Pinning + Metallic Draping + Hollywood Wave Curls",
+    description: "Real client styled in an elegant shimmering brown saree with modern waist pleating, paired with soft romantic hair waves for an evening sangeet.",
+    tags: ["Real Client Work", "Sheer Saree", "Modern Draping", "Sangeet Glam"]
+  },
+  {
+    id: "gal-real-client-7",
+    title: "Smokey Shimmer Eye Artistry & Glass Skin (Real Client)",
+    clientName: "Real Karni Client",
+    weddingVenue: "ITC Grand Chola, Guindy, Chennai",
+    category: "Reception",
+    gender: "Women",
+    image: client7Img,
+    technique: "Shimmer Cut Crease + Sculpted Brow Contours + Glossy Lip Architecture",
+    description: "High-definition close-up of Karni's signature reception makeup: seamless skin blending, subtle metallic eyeshadow, and sculpted features.",
+    tags: ["Real Client Work", "Eye Artistry", "Glass Skin", "Reception Glam"]
+  },
   {
     id: "gal-real-client-1",
     title: "Signature Emerald & Gold Muhurtham Makeover (Real Client)",
@@ -491,6 +544,62 @@ export const FAQ_DATA = [
 ];
 
 export const HERO_SLIDER_DATA = [
+  {
+    id: "slide-real-client-4",
+    serviceId: "bridal-muhurtham",
+    category: "Floral Braid & Jadai",
+    styleName: "Emerald & Floral Braided Jadai Muhurtham",
+    client: "Real Karni Bride",
+    venue: "MRC Hall, Chennai",
+    image: client4Img,
+    headline: "Intricate Pink Floral Braid & Emerald Jewellery Setting",
+    technique: "Real Client Work • Floral Hair Architecture • HD Base",
+    badge: "✨ Real Client Work",
+    tags: ["Floral Braid", "Emerald Setting", "Real Bride"],
+    palette: "from-emerald-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-5",
+    serviceId: "bridal-muhurtham",
+    category: "Royal Temple Bride",
+    styleName: "Grand Temple Gold Jewellery & HD Bridal Glam",
+    client: "Real Karni Bride",
+    venue: "Leela Palace, Chennai",
+    image: client5Img,
+    headline: "Radiant Smile, Layered Temple Gold & Flawless HD Skin",
+    technique: "Real Client Work • Layered Gold Necklaces • Winged Kohl",
+    badge: "✨ Real Client Work",
+    tags: ["Temple Gold", "HD Glam", "Grand Muhurtham"],
+    palette: "from-amber-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-6",
+    serviceId: "saree-dhoti-draping",
+    category: "Modern Sheer Draping",
+    styleName: "Bronze Metallic Sheer Saree & Wave Styling",
+    client: "Real Karni Client",
+    venue: "Taj Coromandel, Chennai",
+    image: client6Img,
+    headline: "Chic Sheer Metallic Saree Draping & Bouncy Hair Waves",
+    technique: "Real Client Work • Modern Saree Pleating • Party Hairdo",
+    badge: "✨ Real Client Work",
+    tags: ["Sheer Saree", "Party Draping", "Sangeet Glam"],
+    palette: "from-amber-950/80 via-black/40 to-transparent"
+  },
+  {
+    id: "slide-real-client-7",
+    serviceId: "reception-glam-women",
+    category: "Glass Skin & Eye Art",
+    styleName: "Shimmer Cut-Crease & Glass Skin Close-Up",
+    client: "Real Karni Client",
+    venue: "ITC Grand Chola, Chennai",
+    image: client7Img,
+    headline: "Precision Eye Makeup, Sculpted Brows & Luminous Glow",
+    technique: "Real Client Work • Shimmer Eyes • Glossy Lip Finish",
+    badge: "✨ Real Client Work",
+    tags: ["Shimmer Eyes", "Glass Skin", "Close-Up Glam"],
+    palette: "from-rose-950/80 via-black/40 to-transparent"
+  },
   {
     id: "slide-real-client-1",
     serviceId: "bridal-muhurtham",

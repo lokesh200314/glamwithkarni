@@ -24,7 +24,7 @@ export const Hero = ({ onOpenBooking, onExploreGallery }) => {
   const timerRef = useRef(null);
 
   const totalSlides = HERO_SLIDER_DATA.length;
-  const slideDuration = 6000; // 6 seconds per slide
+  const slideDuration = 2500; // 2.5 seconds per slide (Faster auto-slider speed)
 
   // Automatic slide cycle with smooth progress tracking
   useEffect(() => {
