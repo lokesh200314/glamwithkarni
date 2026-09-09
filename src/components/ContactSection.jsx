@@ -237,26 +237,26 @@ export const ContactSection = () => {
                       onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
                       className="w-full bg-[#FAF8F5] border border-[#D9CFC4] rounded-lg px-3.5 py-2.5 text-xs text-[#2D2824] focus:outline-hidden focus:ring-1 focus:ring-[#9E5F3D]"
                     >
-                      <option value="Muhurtham + Reception (Complete 2-Event)">
-                        Muhurtham + Reception (Complete 2-Event)
+                      <option value="Platinum Package (₹16,000) - Complimentary Jewellery & Flowers">
+                        Platinum Package (₹16,000) - Complimentary Jewellery & Flowers
                       </option>
-                      <option value="Traditional South Indian Muhurtham Only">
-                        Traditional South Indian Muhurtham Only
+                      <option value="Gold Package (₹14,000) - Complimentary Jewellery & Flowers">
+                        Gold Package (₹14,000) - Complimentary Jewellery & Flowers
                       </option>
-                      <option value="Grand Reception Glam Only">
-                        Grand Reception Glam Only
+                      <option value="Silver Package (₹12,000) - Complimentary Jewellery & Flowers">
+                        Silver Package (₹12,000) - Complimentary Jewellery & Flowers
                       </option>
-                      <option value="Engagement & Haldi/Mehendi">
-                        Engagement & Haldi/Mehendi
+                      <option value="Groom HD Makeup & Styling (₹2,000)">
+                        Groom HD Makeup & Styling (₹2,000)
                       </option>
-                      <option value="Madisar 9-Yards Saree & Hair Draping">
-                        Madisar 9-Yards Saree & Hair Draping
+                      <option value="Saree & Madisar Draping (₹2,500)">
+                        Saree & Madisar Draping (₹2,500)
                       </option>
-                      <option value="Bridesmaid & Family Party Makeup">
-                        Bridesmaid & Family Party Makeup
+                      <option value="Bridal Hairdo & Flower Styling (₹3,500)">
+                        Bridal Hairdo & Flower Styling (₹3,500)
                       </option>
-                      <option value="In-Studio Trial Consultation">
-                        In-Studio Trial Consultation
+                      <option value="Custom Outstation Wedding Inquiry">
+                        Custom Outstation Wedding Inquiry
                       </option>
                     </select>
                   </div>

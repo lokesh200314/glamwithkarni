@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { SERVICES_DATA, ARTIST_INFO } from '../data/mockData';
-import { Calendar, Clock, MapPin, User, CheckCircle2, MessageSquare, Sparkles, ArrowRight, ArrowLeft, ShieldCheck, Heart } from 'lucide-react';
+import { Calendar, Clock, MapPin, User, CheckCircle2, MessageSquare, Sparkles, ArrowRight, ArrowLeft, ShieldCheck, Heart, Gem, CreditCard } from 'lucide-react';
 
 export const BookingSystem = ({ selectedServiceId, onClose }) => {
   const [step, setStep] = useState(1);
   const [selectedService, setSelectedService] = useState(
-    selectedServiceId || 'bridal-muhurtham'
+    selectedServiceId || 'platinum-package'
   );
 
   const [bookingDetails, setBookingDetails] = useState({
@@ -43,17 +43,23 @@ export const BookingSystem = ({ selectedServiceId, onClose }) => {
   };
 
   const generateWhatsAppMessage = () => {
+    const complimentaryNote = currentServiceObj.complimentaryJewelleryAndFlower
+      ? '%0A*Complimentary:* Jewellery & Flower Included ✨'
+      : '';
+
     const text = `*New Appointment Inquiry for Karni (@glamwithKarni_makeover)*%0A%0A` +
       `*Client Name:* ${encodeURIComponent(bookingDetails.name)}%0A` +
       `*Phone:* ${encodeURIComponent(bookingDetails.phone)}%0A` +
-      `*Selected Service:* ${encodeURIComponent(currentServiceObj.title)} (${encodeURIComponent(currentServiceObj.priceDisplay)})%0A` +
+      `*Selected Package:* ${encodeURIComponent(currentServiceObj.title)} (${encodeURIComponent(currentServiceObj.priceDisplay)})` +
+      `${complimentaryNote}%0A` +
       `*Wedding / Event Date:* ${encodeURIComponent(bookingDetails.weddingDate)}%0A` +
       `*Ready-by Time:* ${encodeURIComponent(bookingDetails.eventTime)}%0A` +
-      `*Chennai Locality / Area:* ${encodeURIComponent(bookingDetails.locality)}%0A` +
+      `*Event Location / Locality:* ${encodeURIComponent(bookingDetails.locality)}%0A` +
       `*Venue / Hall Name:* ${encodeURIComponent(bookingDetails.venueName || 'To be decided')}%0A` +
       `*Saree Draping:* ${bookingDetails.needSareeDraping ? 'Yes' : 'No'}%0A` +
       `*Hairdo / Hair Architecture:* ${bookingDetails.needHairdo ? 'Yes' : 'No'}%0A` +
       `*Men / Groom Grooming:* ${bookingDetails.menGroomingNeeded ? 'Yes' : 'No'}%0A` +
+      `*Advance Booking:* ₹6,000/- to lock date (GPay: 8190030368 - KARNIKA B)%0A` +
       `*Notes:* ${encodeURIComponent(bookingDetails.additionalNotes || 'None')}%0A%0A` +
       `_Sent from glamwithKarni_makeover web booking system._`;
 
@@ -145,30 +151,39 @@ export const BookingSystem = ({ selectedServiceId, onClose }) => {
                           : 'border-[#E3D8CC] hover:border-[#2D2824] bg-white'
                       }`}
                     >
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="flex items-center gap-2">
-                          <input
-                            type="radio"
-                            name="serviceSelection"
-                            value={service.id}
-                            checked={selectedService === service.id}
-                            onChange={() => setSelectedService(service.id)}
-                            className="text-[#9E5F3D] focus:ring-[#9E5F3D]"
-                          />
-                          <span className="font-semibold text-sm text-[#2D2824]">
-                            {service.title}
+                      <div>
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="flex items-center gap-2">
+                            <input
+                              type="radio"
+                              name="serviceSelection"
+                              value={service.id}
+                              checked={selectedService === service.id}
+                              onChange={() => setSelectedService(service.id)}
+                              className="text-[#9E5F3D] focus:ring-[#9E5F3D]"
+                            />
+                            <span className="font-semibold text-sm text-[#2D2824]">
+                              {service.title}
+                            </span>
+                          </div>
+                          <span className="font-display text-sm font-semibold text-[#8F5536] whitespace-nowrap">
+                            {service.priceDisplay}
                           </span>
                         </div>
-                        <span className="font-display text-sm font-semibold text-[#8F5536] whitespace-nowrap">
-                          {service.priceDisplay}
-                        </span>
+
+                        <p className="text-[11px] text-[#635950] mt-2 line-clamp-2 pl-6">
+                          {service.tagline}
+                        </p>
+
+                        {service.complimentaryJewelleryAndFlower && (
+                          <div className="mt-2.5 ml-6 inline-flex items-center gap-1.5 text-[10.5px] font-semibold text-[#9E5F3D] bg-[#FAF2EB] px-2 py-0.5 rounded-md border border-[#EADBCE]">
+                            <Gem className="w-3 h-3" />
+                            <span>✨ Jewellery & Flower COMPLIMENTARY</span>
+                          </div>
+                        )}
                       </div>
 
-                      <p className="text-[11px] text-[#635950] mt-2 line-clamp-2 pl-6">
-                        {service.tagline}
-                      </p>
-
-                      <div className="mt-3 pl-6 flex items-center justify-between text-[11px] text-[#85776C]">
+                      <div className="mt-3 pl-6 pt-2 border-t border-[#F2EAE1] flex items-center justify-between text-[11px] text-[#85776C]">
                         <span>Duration: {service.duration}</span>
                         <span className="text-[#9E5F3D] font-medium">For: {service.targetAudience}</span>
                       </div>
@@ -476,6 +491,24 @@ export const BookingSystem = ({ selectedServiceId, onClose }) => {
                         ✓ Pre-Wedding Trial Consultation requested
                       </span>
                     )}
+                  </div>
+
+                  {/* Advance & GPay Payment Information */}
+                  <div className="p-3.5 bg-[#FAF3EC] rounded-xl border border-[#E9DDD1] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+                    <div className="flex items-center gap-2.5">
+                      <CreditCard className="w-4 h-4 text-[#9E5F3D] shrink-0" />
+                      <div>
+                        <span className="font-semibold text-[#2D2824] block">
+                          Advance to block date: {ARTIST_INFO.advanceAmount}/- (Non-refundable)
+                        </span>
+                        <span className="text-[11px] text-[#6E6053]">
+                          GPay: <strong className="font-mono text-[#9E5F3D]">{ARTIST_INFO.gpayNumber}</strong> ({ARTIST_INFO.gpayName})
+                        </span>
+                      </div>
+                    </div>
+                    <span className="text-[11px] text-[#806F60] sm:text-right">
+                      Balance payable immediately after makeup
+                    </span>
                   </div>
                 </div>
 

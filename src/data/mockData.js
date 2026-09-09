@@ -9,19 +9,24 @@ import client8Img from '../assets/clients/karni-client-8.jpg';
 import client9Img from '../assets/clients/karni-client-9.jpg';
 import client10Img from '../assets/clients/karni-client-10.jpg';
 import client11Img from '../assets/clients/karni-client-11.jpg';
+import groomMakeoverImg from '../assets/clients/groom-makeover.jpg';
 
 
 
 export const ARTIST_INFO = {
   name: "Karni",
   brandName: "glamwithKarni_makeover",
-  displayTagline: "Bridal, Groom Makeovers, Saree Draping & Hairdo Artistry (Doorstep Travel Anywhere)",
+  displayTagline: "Bridal & Groom Makeovers, Saree & Dhoti Draping & Hairdo Artistry",
   experienceYears: 9,
   makeoversCount: 850,
   googleRating: 4.9,
   reviewsCount: 310,
   phone: "+91 81223 03766",
   whatsappNumber: "918122303766",
+  gpayNumber: "8190030368",
+  gpayName: "KARNIKA B",
+  advanceAmount: "₹6,000",
+  advanceNote: "Mandatory to block the date",
   email: "glamwithkarni@gmail.com",
   instagramHandle: "@glamwithKarni_makeover",
   studioAddress: "No 18, Somasundaram Avenue, Sakthi Nagar, Porur, Chennai, Tamil Nadu",
@@ -30,182 +35,171 @@ export const ARTIST_INFO = {
     "Doorstep & Venue Travel Anywhere (Home, Mandapam & Resorts)",
     "Chennai, All Over Tamil Nadu & South India",
     "Destination Weddings & Outstations Worldwide"
+  ],
+  bookingPolicy: [
+    "Date will be blocked only after advance payment",
+    "Advance amount (₹6,000) is non-refundable",
+    "Travelling charges to be borne by client",
+    "No last-minute discounts",
+    "Balance payment must be paid immediately after makeup (Cash / GPay)",
+    "Late payments are not accepted"
+  ],
+  importantNotes: [
+    "Jewellery & Flower COMPLIMENTARY with all bridal packages",
+    "Advanced / designer jewellery models will be charged extra",
+    "Real / fresh flowers will be charged extra based on type, quantity & design"
   ]
 };
 
 export const SERVICES_DATA = [
   {
-    id: "bridal-muhurtham",
-    title: "Bridal South Indian Muhurtham Makeover",
-    category: "Bridal (Women)",
+    id: "silver-package",
+    title: "Silver Package — Classic Elegance Bridal Look",
+    category: "Bridal Packages",
     targetAudience: "Women",
-    tagline: "Flawless waterproof HD skin, traditional winged kohl, authentic jewellery setting & Madisar/Silk Saree draping",
-    priceDisplay: "₹22,000",
-    duration: "3.5 - 4 Hours",
-    isPopular: true,
+    tagline: "Professional Non-HD/HD bridal makeup with HUDA Beauty & NARS, fresh lashes & lenses with complimentary jewellery and flowers",
+    priceDisplay: "₹12,000",
+    priceValue: 12000,
+    duration: "3 - 3.5 Hours",
+    isPopular: false,
+    complimentaryJewelleryAndFlower: true,
+    badgeText: "Classic Elegance",
     image: client5Img,
     features: [
-      "Ultra HD Sweat-Proof Foundation for high-humidity & sacred homam fires",
-      "Traditional Winged Eyeliner & Smudgeproof Kohl Detailing",
-      "Traditional South Indian Braided Jadai or Classic Floral Ringlet Bun",
-      "Fresh Madurai Jasmine (Malli) / Veni & Floral Architecture Attachment",
-      "Silk Saree Draping / 9-Yards Madisar (Iyer & Iyengar) Box-Pleating",
-      "Complete Temple Jewellery, Nethi Chutti, Matha Patti & Surya/Chandra Setting",
-      "Luxury Mini Touch-Up Kit (Lip shade vial, Blotting Film, Extra Pins)"
+      "Professional Non-HD/HD Bridal Makeup",
+      "Premium International Brands (HUDA Beauty / NARS)",
+      "Fresh Eye Lashes Included",
+      "Fresh Eye Lenses Included",
+      "Basic Hair Styling (Curls / Straight)",
+      "Hair Accessories, Hair Pins & Safety Pins",
+      "Saree Draping Assistance",
+      "✨ JEWELLERY & FLOWER COMPLIMENTARY"
     ],
-    recommendedFor: "Morning Muhurtham, Traditional Tamil, Telugu, Kannada & Brahmin weddings",
-    productsUsed: ["Charlotte Tilbury Flawless Filter", "MAC Studio Fix", "Huda Beauty HD Powder", "NARS Radiant Creamy", "Urban Decay All Nighter"]
+    recommendedFor: "Morning Muhurtham, Classic Traditional Weddings, Simple Receptions & Engagements",
+    productsUsed: ["HUDA Beauty", "NARS", "MAC Studio Fix", "Urban Decay"]
   },
   {
-    id: "groom-hd-makeover",
-    title: "Groom Royal HD Grooming & Styling",
+    id: "gold-package",
+    title: "Gold Package — UV Radiant Bridal Glow",
+    category: "Bridal Packages",
+    targetAudience: "Women",
+    tagline: "UV Finish Dewy/Glam makeup with NARS & Charlotte Tilbury, hair extensions & complimentary jewellery and flowers",
+    priceDisplay: "₹14,000",
+    priceValue: 14000,
+    duration: "3.5 - 4 Hours",
+    isPopular: true,
+    complimentaryJewelleryAndFlower: true,
+    badgeText: "Most Popular",
+    image: client1Img,
+    features: [
+      "UV Finish Makeup (Dewy / Glam Finish)",
+      "Premium Luxury Products (NARS / Charlotte Tilbury)",
+      "Fresh Eye Lashes Included",
+      "Fresh Eye Lenses Included",
+      "Hair Crimping & Hair Accessories",
+      "Hair Pins & Safety Pins",
+      "Savuri / Curls / Straight Extensions Included",
+      "Saree Draping Assistance",
+      "✨ JEWELLERY & FLOWER COMPLIMENTARY"
+    ],
+    recommendedFor: "Grand Muhurtham, High-Humidity Stage Rituals, Sacred Homam Fires & Evening Reception",
+    productsUsed: ["NARS", "Charlotte Tilbury", "Huda Beauty", "Dior Backstage"]
+  },
+  {
+    id: "platinum-package",
+    title: "Platinum Package — Luxury Glass Skin Bridal Transformation",
+    category: "Bridal Packages",
+    targetAudience: "Women",
+    tagline: "Premium Glossy HD makeup, Exclusive Glass Skin Prep ritual, premium extensions & complimentary jewellery and flowers",
+    priceDisplay: "₹16,000",
+    priceValue: 16000,
+    duration: "4 - 4.5 Hours",
+    isPopular: true,
+    complimentaryJewelleryAndFlower: true,
+    badgeText: "Luxury Glass Skin",
+    image: client7Img,
+    features: [
+      "Premium Glossy HD Bridal Makeup",
+      "Luxury Brands (Charlotte Tilbury / NARS)",
+      "✨ Exclusive Glass Skin Prep Ritual: Hydrating Facial Mask Treatment",
+      "Deep Moisture & Glow Boost for Flawless Bridal Finish",
+      "Fresh Eye Lashes & Fresh Eye Lenses Included",
+      "Hair Crimping & Premium Hair Accessories",
+      "Hair Extensions / Savuri / Curls / Straight Extensions Included",
+      "Hair Pins & Safety Pins",
+      "Saree / Lehenga Draping Assistance",
+      "✨ JEWELLERY & FLOWER COMPLIMENTARY"
+    ],
+    recommendedFor: "Ultra-Luxury Bridal Makeovers, 4K Cinema Photography, Grand Banquets & Ballrooms",
+    productsUsed: ["Charlotte Tilbury Flawless Filter", "NARS Luxury HD", "Dior Backstage", "Fenty Beauty"]
+  },
+  {
+    id: "groom-makeup",
+    title: "Groom Makeup — Simple, Elegant & Camera Ready",
     category: "Groom (Men)",
     targetAudience: "Men",
-    tagline: "Natural HD camera-ready grooming, beard sculpting, structured hair styling & Dhoti/Sherwani draping",
-    priceDisplay: "₹10,500",
-    duration: "1.5 - 2 Hours",
+    tagline: "Simple, elegant & camera-ready grooming for men: anti-shine matte finish, skin tone evening, beard sculpting & hair styling",
+    priceDisplay: "₹2,000",
+    priceValue: 2000,
+    duration: "45 Mins - 1 Hour",
     isPopular: true,
-    image: client8Img,
+    complimentaryJewelleryAndFlower: false,
+    badgeText: "Groom Special",
+    image: groomMakeoverImg,
     features: [
-      "Natural HD Skin Prep & Mattifying Base (Zero cakey look, perfectly skin-matched)",
-      "Dark circle correction, blemish concealing & high-definition camera tone-evening",
-      "Beard trimming, crisp edge definition, beard balm & conditioning",
-      "Groom Hairstyling (Textured Pompadour, Classic Side-Part, Matte volume hold)",
-      "Traditional Silk Dhoti (Pattu Veshti & Angavastram) / Sherwani & Kurta Draping",
-      "Turban / Safa / Pattu Shawl fixing & Brooch alignment",
-      "Sweat-resistant matte fixing spray for long stage reception photo sessions"
+      "Simple, Elegant & Camera Ready Natural Makeup",
+      "Skin Tone Evening & Dark Circle Concealing (Zero ash/white cast)",
+      "Anti-Shine T-Zone Mattifying Base for Stage Lighting",
+      "Beard Grooming, Trimming & Edge Shaping",
+      "Structured Groom Hair Styling (Matte Pomade / High Hold)",
+      "Pattu Veshti (Dhoti) / Sherwani / Suit Lapel Pinning Assistance"
     ],
-    recommendedFor: "Grooms for Muhurtham, Reception, Engagement, Sangeet & Pre-wedding shoots",
-    productsUsed: ["Tom Ford For Men", "MAC Prep+Prime", "Kryolan Mattifying Gel", "Schwarzkopf Osis+", "Fenty Beauty Invisimatte"]
-  },
-  {
-    id: "couple-muhurtham-reception",
-    title: "Couple Signature Muhurtham & Reception Package",
-    category: "Couple Combos",
-    targetAudience: "Both / Couples",
-    tagline: "Complete coordinated beauty and styling for both Bride & Groom across wedding rituals",
-    priceDisplay: "₹48,000",
-    duration: "Full Day Care",
-    isPopular: true,
-    image: client10Img,
-    features: [
-      "Both Morning Muhurtham & Evening Reception complete makeovers for Bride",
-      "Complete Muhurtham & Reception grooming and styling for Groom",
-      "Pre-wedding in-studio skin consultation & look-matching trial session for couple",
-      "2 Distinct Hairstyles for Bride (Traditional Braid with Jadai + Reception Waves/Bun)",
-      "Multiple Saree & Lehenga Drapings for Bride + Dhoti & Suit styling for Groom",
-      "Complimentary makeover for Mother of Bride or Groom (1 Person)",
-      "Dedicated Assistant on-site for instant stage photo touch-ups"
-    ],
-    recommendedFor: "Couples wanting seamless, stress-free coordinated styling from dawn to midnight",
-    productsUsed: ["Dior Backstage", "Charlotte Tilbury", "MAC Pro Longwear", "NARS", "Tom Ford"]
+    recommendedFor: "Grooms for Muhurtham, Reception, Sangeet, Engagement & Pre-Wedding Shoots",
+    productsUsed: ["Kryolan Anti-Shine", "MAC Prep+Prime", "Schwarzkopf Osis+", "Tom Ford for Men"]
   },
   {
     id: "saree-dhoti-draping",
     title: "Professional Saree Draping & Dhoti Styling",
-    category: "Draping & Saree",
-    targetAudience: "Both / Couples",
-    tagline: "Master-level pleating, 9-yards Madisar, Lehenga & Dhoti draping for men and women",
-    priceDisplay: "₹2,500 - ₹5,500",
-    duration: "45 Mins - 1 Hour",
+    category: "Draping & Styling",
+    targetAudience: "Men & Women",
+    tagline: "Master-level pleating, 9-yards Madisar (Iyer & Iyengar), Lehenga and Men's Pattu Veshti draping",
+    priceDisplay: "₹2,500",
+    priceValue: 2500,
+    duration: "45 Mins",
     isPopular: false,
+    complimentaryJewelleryAndFlower: false,
     image: client11Img,
     features: [
       "Traditional Kanchipuram Silk Saree crisp Box Pleating & Ironing",
-      "Authentic 9-Yards Madisar Draping (Both Iyer & Iyengar styles with utmost comfort)",
-      "Modern Bollywood, Mermaid, Gujarati & Indo-Western Saree draping styles",
-      "Lehenga Dupatta styling, double-dupatta pin-up & can-can silhouette setting",
-      "Men's Traditional Pattu Veshti (Panchakacham / 8-yards Dhoti) draping",
-      "Angavastram, Royal Stole & Sherwani Dupatta draping for grooms",
-      "Micro-pinning technique ensuring zero slipping during walking or dancing"
+      "Authentic 9-Yards Madisar Draping (Both Iyer & Iyengar styles)",
+      "Men's Traditional Pattu Veshti (Panchakacham / Dhoti) & Angavastram",
+      "Lehenga Dupatta Styling & Double-Dupatta Pinning",
+      "Secure Micro-Pinning (Zero slipping during walking or rituals)"
     ],
-    recommendedFor: "Brides, Grooms, Mothers, Sisters & wedding guests seeking flawless traditional draping",
+    recommendedFor: "Brides, Grooms & Wedding Hosts seeking master traditional draping",
     productsUsed: ["Steam Ironing", "Anti-tear Fabric Safety Fasteners", "Zero-Damage Hidden Pins"]
   },
   {
     id: "hairdo-and-styling",
-    title: "Bridal & Party Hairdo Artistry",
-    category: "Hairdo & Styling",
-    targetAudience: "Both / Couples",
-    tagline: "Intricate jasmine Jadai, contemporary textured buns, Hollywood glam waves & Men's styling",
-    priceDisplay: "₹4,500 - ₹8,500",
+    title: "Bridal & Event Hairdo Artistry",
+    category: "Draping & Styling",
+    targetAudience: "Men & Women",
+    tagline: "Intricate jasmine Jadai, floral architecture, cascading open curls & modern textured updos",
+    priceDisplay: "₹3,500",
+    priceValue: 3500,
     duration: "1 - 1.5 Hours",
     isPopular: false,
+    complimentaryJewelleryAndFlower: false,
     image: client9Img,
     features: [
-      "Traditional South Indian Braided Jadai with antique billai & fresh poola jada",
-      "Fresh Madurai Malli (Jasmine), Rose petals, Baby's Breath & Orchids weaving",
-      "Modern Textured Low Buns, Donut Buns & Messy French Chignons",
-      "Bouncy Hollywood Waves & Half-Up Waterfall Braids with hair extensions",
-      "Men's Hair texturizing, volume blow-dry, pomade hold & gray blending",
-      "Hair prep with heat protectant, anti-frizz humidity shield & 18-hour hold spray"
+      "Traditional South Indian Braided Jadai with Antique Setting",
+      "Fresh Madurai Malli (Jasmine) & Floral Veni Fitting",
+      "Bouncy Hollywood Waves or Textured Low Reception Bun",
+      "Hair Prep with Heat Protectant & Long-Hold Humidity Shield Spray",
+      "Men's Hair texturizing, volume blow-dry & pomade hold"
     ],
-    recommendedFor: "Brides, Bridesmaids, Grooms & party guests looking for bespoke hair architecture",
-    productsUsed: ["Dyson Supersonic", "Osis+ Schwarzkopf", "Bed Head TIGI", "L'Oreal Professionnel", "Moroccanoil"]
-  },
-  {
-    id: "reception-glam-women",
-    title: "Grand Evening Reception & Cocktail Glam",
-    category: "Bridal (Women)",
-    targetAudience: "Women",
-    tagline: "Luminous glass skin with sculpted contours and statement shimmer eye art",
-    priceDisplay: "₹24,000",
-    duration: "3 - 3.5 Hours",
-    isPopular: true,
-    image: client6Img,
-    features: [
-      "Airbrush / Micro-Mist HD Base for 16-hour photo-ready glow",
-      "Cut-Crease Champagne / Rose Gold Shimmer Eye Glam",
-      "Hollywood Waves, Textured Half-Updo, or Modern Textured Bun",
-      "Custom Silk Eyelash Clusters & Lens Fitting",
-      "Lehenga / Evening Gown Draping & Dupatta Pinning",
-      "Collarbone & Décolletage Body Shimmer Contouring",
-      "Deluxe Touch-up Kit with custom lip color vial"
-    ],
-    recommendedFor: "Evening Reception, Sangeet Cocktail, Grand Ballrooms & Hotel Banquets",
-    productsUsed: ["Dior Backstage", "Charlotte Tilbury Pillow Talk", "Tarte Shape Tape", "Anastasia Beverly Hills", "Fenty Beauty"]
-  },
-  {
-    id: "engagement-haldi",
-    title: "Engagement, Haldi & Sangeet (Men & Women)",
-    category: "Pre-Wedding & Party",
-    targetAudience: "Both / Couples",
-    tagline: "Dewy sun-kissed glow, breezy boho braids, floral adornments and vibrant groom styling",
-    priceDisplay: "₹16,000",
-    duration: "2.5 - 3 Hours",
-    isPopular: false,
-    image: client7Img,
-    features: [
-      "Water-resistant dewy glow makeup that survives turmeric & tears of joy",
-      "Soft Glam Smokey or Peachy Monochrome look for Bride",
-      "Natural beard & skin grooming for Groom",
-      "Floral Jewelry Setting & Botanical Hair Artistry",
-      "Half-Saree / Anarkali / Kurta Draping and Styling",
-      "Custom Eyelash Enhancement & Hair Styling"
-    ],
-    recommendedFor: "Engagement ceremonies, Haldi mornings, Mehendi parties, Pre-wedding shoots",
-    productsUsed: ["Rare Beauty Liquid Blush", "NARS Sheer Glow", "Benefit Cosmetics", "Too Faced Born This Way"]
-  },
-  {
-    id: "family-party-entourage",
-    title: "Family Entourage & Bridesmaids/Groomsmen Glam",
-    category: "Pre-Wedding & Party",
-    targetAudience: "Both / Couples",
-    tagline: "Refined, camera-ready elegance for mothers, sisters, fathers, and wedding party members",
-    priceDisplay: "₹6,000 / person",
-    duration: "1.5 Hours / person",
-    isPopular: false,
-    image: client4Img,
-    features: [
-      "HD Base matching skin undertone perfectly (Zero ashy or white-cast)",
-      "Soft Glam Eyes & Long-Wear Lip Application for Women",
-      "Clean skin tone correction & beard/hair styling for Men",
-      "Hairstyling (Classic Bun, Blowout Curls, or Braids)",
-      "Saree Draping / Dhoti / Kurta Pleating & Pinning",
-      "Bindi & Fresh Flower Placement"
-    ],
-    recommendedFor: "Mother of Bride/Groom, Sister of Bride, Bridesmaids, Groomsmen, Wedding Guests",
-    productsUsed: ["MAC Studio Sculpt", "Kryolan HD", "Maybelline Superstay", "L'Oreal Paris Pro"]
+    recommendedFor: "Brides, Grooms & Wedding Guests seeking bespoke hair architecture",
+    productsUsed: ["Dyson Supersonic", "Osis+ Schwarzkopf", "Bed Head TIGI", "Moroccanoil"]
   }
 ];
 
@@ -475,31 +469,31 @@ export const CHENNAI_AREAS = [
 
 export const FAQ_DATA = [
   {
-    question: "What services does Karni (@glamwithKarni_makeover) provide?",
-    answer: "Karni provides end-to-end luxury beauty and styling services for BOTH men and women. This includes South Indian Bridal Muhurtham & Reception HD/Airbrush makeup, Groom HD Makeovers & beard grooming, Traditional Saree Draping (including 9-yards Madisar), Groom Dhoti & Pattu Veshti draping, and customized Hairdo & Hair Architecture (Bridal Jadai, fresh jasmine flowers, modern textured updos, Hollywood waves, and men's hair styling)."
+    question: "What are Karni's bridal makeover packages and pricing?",
+    answer: "Karni offers three signature bridal tiers: Silver Package at ₹12,000/- (Classic Elegance Bridal Look with HUDA/NARS & lashes/lenses), Gold Package at ₹14,000/- (UV Radiant Bridal Glow with UV Finish & NARS/Charlotte Tilbury), and Platinum Package at ₹16,000/- (Luxury Glass Skin Bridal Transformation with hydrating facial mask ritual & Charlotte Tilbury). All bridal packages include complimentary jewellery and flowers!"
   },
   {
-    question: "Do you do makeovers and styling for both Men and Women?",
-    answer: "Yes! Karni specializes in both Bridal (Women) and Groom (Men) makeovers, as well as couple combo packages and complete wedding family party entourage (bridesmaids, groomsmen, mothers, and fathers)."
+    question: "Do you offer Groom (Men's) makeup and grooming?",
+    answer: "Yes! Groom Makeup is available at ₹2,000/-. It features simple, elegant, and camera-ready grooming including anti-shine matte finish, skin tone evening, beard sculpting, hair styling, and silk dhoti / suit styling assistance."
   },
   {
-    question: "Do you provide Saree Draping & 9-Yards Madisar / Men's Dhoti styling separately?",
-    answer: "Yes, we offer specialized standalone and add-on Draping services for Kanchipuram silk sarees, Iyer & Iyengar 9-yards Madisar, Lehengas, and Men's Traditional Silk Pattu Veshti (Dhoti) / Angavastram with pre-box-pleating and iron finish."
+    question: "Is jewellery and hair flowers included in the bridal packages?",
+    answer: "Yes! Jewellery and flowers are COMPLIMENTARY with all bridal packages (Silver, Gold, and Platinum). Please note that advanced/designer jewellery models will be charged extra, and real/fresh flowers are charged based on type, quantity, and design."
   },
   {
-    question: "Do you travel to marriage halls, resorts, and home venues anywhere?",
-    answer: "Yes! Wherever you are located, Karni & team travel directly to your wedding mandapam, banquet hall, hotel resort, or home residence. We bring professional high-lumen studio ring lights, complete bridal/groom makeup kits, and specialized saree/dhoti steaming and pleating gear."
+    question: "What is the advance booking and payment policy?",
+    answer: "An advance payment of ₹6,000/- (GPay: 8190030368 — Karnika B) is mandatory to block your date. The advance amount is non-refundable. Travelling charges are borne by the client. Balance payment must be settled immediately after the makeover via Cash or GPay."
   },
   {
-    question: "How far in advance should we book for our wedding muhurtham?",
-    answer: "Because auspicious Tamil Muhurtham dates fill up very quickly, we recommend booking 4 to 8 months in advance. Couple packages and prime morning muhurtham slots get reserved first."
+    question: "Do you provide Saree Draping & Men's Dhoti styling separately?",
+    answer: "Yes, standalone Professional Saree Draping & Dhoti Styling is available at ₹2,500/-, including Kanchipuram silk saree box pleating, 9-yards Madisar (Iyer & Iyengar), and Men's Pattu Veshti (Panchakacham/Dhoti) styling."
   }
 ];
 
 export const HERO_SLIDER_DATA = [
   {
     id: "slide-real-client-8",
-    serviceId: "bridal-muhurtham",
+    serviceId: "silver-package",
     category: "Heritage Gramophone Bride",
     styleName: "Vintage Gramophone Heritage Muhurtham",
     client: "Real Karni Bride",
@@ -527,7 +521,7 @@ export const HERO_SLIDER_DATA = [
   },
   {
     id: "slide-real-client-10",
-    serviceId: "bridal-muhurtham",
+    serviceId: "gold-package",
     category: "Kundan Jewellery & Eye Art",
     styleName: "Kundan Jewellery & Eye Artistry Detail",
     client: "Real Karni Bride",
@@ -555,7 +549,7 @@ export const HERO_SLIDER_DATA = [
   },
   {
     id: "slide-real-client-4",
-    serviceId: "bridal-muhurtham",
+    serviceId: "platinum-package",
     category: "Floral Braid & Jadai",
     styleName: "Emerald & Floral Braided Jadai Muhurtham",
     client: "Real Karni Bride",
@@ -569,7 +563,7 @@ export const HERO_SLIDER_DATA = [
   },
   {
     id: "slide-real-client-5",
-    serviceId: "bridal-muhurtham",
+    serviceId: "platinum-package",
     category: "Royal Temple Bride",
     styleName: "Grand Temple Gold Jewellery & HD Bridal Glam",
     client: "Real Karni Bride",
@@ -597,7 +591,7 @@ export const HERO_SLIDER_DATA = [
   },
   {
     id: "slide-real-client-7",
-    serviceId: "reception-glam-women",
+    serviceId: "platinum-package",
     category: "Glass Skin & Eye Art",
     styleName: "Shimmer Cut-Crease & Glass Skin Close-Up",
     client: "Real Karni Client",
@@ -611,7 +605,7 @@ export const HERO_SLIDER_DATA = [
   },
   {
     id: "slide-real-client-1",
-    serviceId: "bridal-muhurtham",
+    serviceId: "gold-package",
     category: "Real Bride Transformation",
     styleName: "Signature Emerald & Gold Muhurtham Makeover",
     client: "Real Karni Client",
@@ -639,7 +633,7 @@ export const HERO_SLIDER_DATA = [
   },
   {
     id: "slide-real-client-3",
-    serviceId: "reception-glam-women",
+    serviceId: "platinum-package",
     category: "Bridal Veil & Hairdo",
     styleName: "Royal Velvet Dupatta & Bridal Hairdo Artistry",
     client: "Real Karni Client",
